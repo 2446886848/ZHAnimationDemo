@@ -10,7 +10,7 @@
 
 static NSString *const kContentOffset = @"contentOffset";
 
-@interface ShapeLayerViewController ()
+@interface ShapeLayerViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, weak) CAShapeLayer *shapeLayer;
 
@@ -49,23 +49,20 @@ static NSString *const kContentOffset = @"contentOffset";
     scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height * 2);
     [self.view addSubview:scrollView];
     
-    [scrollView addObserver:self forKeyPath:kContentOffset options:NSKeyValueObservingOptionNew context:(__bridge void * _Nullable)(scrollView)];
+    scrollView.delegate = self;
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if ([keyPath isEqualToString:kContentOffset]) {
-        UIScrollView *scrollView = (__bridge UIScrollView *)(context);
-        CGFloat offsetY = [change[NSKeyValueChangeNewKey] CGSizeValue].height;
-        if (offsetY >= 0 && offsetY <= scrollView.contentSize.height) {
-            self.shapeLayer.lineWidth = self.shapeLayer.strokeEnd * 10;
-            self.shapeLayer.strokeEnd = offsetY / scrollView.contentSize.height;
-        }
-        else
-        {
-            self.shapeLayer.lineWidth = 1;
-            self.shapeLayer.strokeEnd = 0;
-        }
+    CGFloat offsetY = scrollView.contentOffset.y;
+    if (offsetY >= 0 && offsetY <= scrollView.contentSize.height) {
+        self.shapeLayer.lineWidth = self.shapeLayer.strokeEnd * 10;
+        self.shapeLayer.strokeEnd = offsetY / scrollView.contentSize.height;
+    }
+    else
+    {
+        self.shapeLayer.lineWidth = 1;
+        self.shapeLayer.strokeEnd = 0;
     }
 }
 
