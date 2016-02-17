@@ -17,6 +17,8 @@
 		FCC2D3FC1C74481B00665ED2 /* ViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC2D3FB1C74481B00665ED2 /* ViewAnimationViewController.m */; };
 		FCC2D4001C744BBF00665ED2 /* aaa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCC2D3FE1C744BBF00665ED2 /* aaa.jpg */; };
 		FCC2D4011C744BBF00665ED2 /* bbb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCC2D3FF1C744BBF00665ED2 /* bbb.jpg */; };
+		FCC2D4041C74605800665ED2 /* KeyFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC2D4031C74605800665ED2 /* KeyFrameViewController.m */; };
+		FCC2D4061C74609500665ED2 /* leaf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC2D4051C74609500665ED2 /* leaf@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		FCC2D3FB1C74481B00665ED2 /* ViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAnimationViewController.m; sourceTree = "<group>"; };
 		FCC2D3FE1C744BBF00665ED2 /* aaa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aaa.jpg; sourceTree = "<group>"; };
 		FCC2D3FF1C744BBF00665ED2 /* bbb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bbb.jpg; sourceTree = "<group>"; };
+		FCC2D4021C74605800665ED2 /* KeyFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyFrameViewController.h; sourceTree = "<group>"; };
+		FCC2D4031C74605800665ED2 /* KeyFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyFrameViewController.m; sourceTree = "<group>"; };
+		FCC2D4051C74609500665ED2 /* leaf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leaf@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,8 @@
 				FC391D6D1C740B72001283F8 /* ShapeLayerViewController.m */,
 				FCC2D3FA1C74481B00665ED2 /* ViewAnimationViewController.h */,
 				FCC2D3FB1C74481B00665ED2 /* ViewAnimationViewController.m */,
+				FCC2D4021C74605800665ED2 /* KeyFrameViewController.h */,
+				FCC2D4031C74605800665ED2 /* KeyFrameViewController.m */,
 			);
 			name = DetailViewController;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 			children = (
 				FCC2D3FE1C744BBF00665ED2 /* aaa.jpg */,
 				FCC2D3FF1C744BBF00665ED2 /* bbb.jpg */,
+				FCC2D4051C74609500665ED2 /* leaf@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			files = (
 				FCC2D4011C744BBF00665ED2 /* bbb.jpg in Resources */,
 				FC391D641C740715001283F8 /* LaunchScreen.storyboard in Resources */,
+				FCC2D4061C74609500665ED2 /* leaf@2x.png in Resources */,
 				FCC2D4001C744BBF00665ED2 /* aaa.jpg in Resources */,
 				FC391D611C740715001283F8 /* Assets.xcassets in Resources */,
 				FC391D5F1C740715001283F8 /* Main.storyboard in Resources */,
@@ -186,6 +195,7 @@
 				FC391D5C1C740715001283F8 /* ViewController.m in Sources */,
 				FC391D591C740715001283F8 /* AppDelegate.m in Sources */,
 				FC391D6E1C740B72001283F8 /* ShapeLayerViewController.m in Sources */,
+				FCC2D4041C74605800665ED2 /* KeyFrameViewController.m in Sources */,
 				FCC2D3FC1C74481B00665ED2 /* ViewAnimationViewController.m in Sources */,
 				FC391D561C740715001283F8 /* main.m in Sources */,
 			);
