@@ -75,13 +75,32 @@
                                             <segue destination="NiX-WZ-Q3l" kind="show" id="n24-2O-e6p"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Fem-gX-LkL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ibh-fW-k94" detailTextLabel="dvj-xh-hED" style="IBUITableViewCellStyleValue1" id="Fem-gX-LkL">
                                         <rect key="frame" x="0.0" y="108" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fem-gX-LkL" id="GzE-LC-fSp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="UIView+Block动画" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ibh-fW-k94">
+                                                    <rect key="frame" x="15" y="12" width="133" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dvj-xh-hED">
+                                                    <rect key="frame" x="357" y="12" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mei-3F-dnj" kind="show" id="Fkd-UP-dLZ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Uah-Pn-EE1">
                                         <rect key="frame" x="0.0" y="152" width="414" height="44"/>
@@ -106,6 +125,41 @@
             </objects>
             <point key="canvasLocation" x="-1110" y="312"/>
         </scene>
+        <!--View Animation View Controller-->
+        <scene sceneID="Uzq-ar-J0h">
+            <objects>
+                <viewController id="mei-3F-dnj" customClass="ViewAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jls-EH-Uq8"/>
+                        <viewControllerLayoutGuide type="bottom" id="P3d-dy-OLe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3lY-1k-P9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5A-b4-1Uv">
+                                <rect key="frame" x="26" y="84" width="139" height="22"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aaa.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ezD-Qn-GMR">
+                                <rect key="frame" x="32" y="131" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="firlsLabel" destination="r5A-b4-1Uv" id="pf1-d1-VGB"/>
+                        <outlet property="imageView" destination="ezD-Qn-GMR" id="EgR-Hk-KgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YhE-HI-J2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="334"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="NDJ-DF-b40">
             <objects>
@@ -124,4 +178,7 @@
             <point key="canvasLocation" x="-1664" y="312"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aaa.jpg" width="1000" height="667"/>
+    </resources>
 </document>

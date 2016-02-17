@@ -14,6 +14,9 @@
 		FC391D611C740715001283F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC391D601C740715001283F8 /* Assets.xcassets */; };
 		FC391D641C740715001283F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC391D621C740715001283F8 /* LaunchScreen.storyboard */; };
 		FC391D6E1C740B72001283F8 /* ShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC391D6D1C740B72001283F8 /* ShapeLayerViewController.m */; };
+		FCC2D3FC1C74481B00665ED2 /* ViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC2D3FB1C74481B00665ED2 /* ViewAnimationViewController.m */; };
+		FCC2D4001C744BBF00665ED2 /* aaa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCC2D3FE1C744BBF00665ED2 /* aaa.jpg */; };
+		FCC2D4011C744BBF00665ED2 /* bbb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCC2D3FF1C744BBF00665ED2 /* bbb.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,10 @@
 		FC391D651C740715001283F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC391D6C1C740B72001283F8 /* ShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerViewController.h; sourceTree = "<group>"; };
 		FC391D6D1C740B72001283F8 /* ShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerViewController.m; sourceTree = "<group>"; };
+		FCC2D3FA1C74481B00665ED2 /* ViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAnimationViewController.h; sourceTree = "<group>"; };
+		FCC2D3FB1C74481B00665ED2 /* ViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAnimationViewController.m; sourceTree = "<group>"; };
+		FCC2D3FE1C744BBF00665ED2 /* aaa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aaa.jpg; sourceTree = "<group>"; };
+		FCC2D3FF1C744BBF00665ED2 /* bbb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bbb.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 		FC391D531C740715001283F8 /* ZHAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FCC2D3FD1C744BA000665ED2 /* Resources */,
 				FC391D6B1C740B19001283F8 /* DetailViewController */,
 				FC391D571C740715001283F8 /* AppDelegate.h */,
 				FC391D581C740715001283F8 /* AppDelegate.m */,
@@ -88,8 +96,19 @@
 			children = (
 				FC391D6C1C740B72001283F8 /* ShapeLayerViewController.h */,
 				FC391D6D1C740B72001283F8 /* ShapeLayerViewController.m */,
+				FCC2D3FA1C74481B00665ED2 /* ViewAnimationViewController.h */,
+				FCC2D3FB1C74481B00665ED2 /* ViewAnimationViewController.m */,
 			);
 			name = DetailViewController;
+			sourceTree = "<group>";
+		};
+		FCC2D3FD1C744BA000665ED2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCC2D3FE1C744BBF00665ED2 /* aaa.jpg */,
+				FCC2D3FF1C744BBF00665ED2 /* bbb.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC2D4011C744BBF00665ED2 /* bbb.jpg in Resources */,
 				FC391D641C740715001283F8 /* LaunchScreen.storyboard in Resources */,
+				FCC2D4001C744BBF00665ED2 /* aaa.jpg in Resources */,
 				FC391D611C740715001283F8 /* Assets.xcassets in Resources */,
 				FC391D5F1C740715001283F8 /* Main.storyboard in Resources */,
 			);
@@ -165,6 +186,7 @@
 				FC391D5C1C740715001283F8 /* ViewController.m in Sources */,
 				FC391D591C740715001283F8 /* AppDelegate.m in Sources */,
 				FC391D6E1C740B72001283F8 /* ShapeLayerViewController.m in Sources */,
+				FCC2D3FC1C74481B00665ED2 /* ViewAnimationViewController.m in Sources */,
 				FC391D561C740715001283F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +336,7 @@
 				FC391D6A1C740715001283F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
